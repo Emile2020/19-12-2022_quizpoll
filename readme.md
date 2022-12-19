@@ -27,7 +27,7 @@ To get started and contribute to the project, you can check [contributing.md](ht
 
 ## Credits
 ### Contributors
-- [Emile](https://github.com/Emile2020/
+- [Emile](https://github.com/Emile2020/)
 (Get your name here by contributing to the project!)
 ### Bug reporters
 - Nobody yet
