@@ -1,0 +1,33 @@
+{
+    "results": {
+        "Q0": {
+            "18": 5,
+            "19": 30,
+            "20": 900,
+            "21": 293
+        },
+        "Q1": {
+            "chicken": 10,
+            "egg": 2
+        }
+    },
+    "title": "Pollsite",
+    "questions": [
+        {
+            "question": "What is 9+10?",
+            "answers": [
+                "21",
+                "20",
+                "19",
+                "18"
+            ]
+        },
+        {
+            "question": "What came firt, the chicken or the egg?",
+            "answers": [
+                "chicken",
+                "egg"
+            ]
+        }
+    ]
+}
