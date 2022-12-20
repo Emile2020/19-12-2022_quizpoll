@@ -3,6 +3,14 @@ import path from 'path';
 import fs from 'fs'
 import bodyParser from 'body-parser';
 import nodemail from 'nodemailer';
+import rateLimit from 'express-rate-limit'
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+    standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+    legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+})
+app.use(limiter)
 const __dirname = path.resolve();
 //get data from ./src/json/index.json
 var data = JSON.parse(fs.readFileSync(__dirname + '/src/json/index.json', 'utf8'));
