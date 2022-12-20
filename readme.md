@@ -43,6 +43,8 @@ See [license](ttps://github.com/Emile2020/19-12-2022_quizpoll/license)
 ## Disclaimer
 This project is not affiliated with any company or organization. It is a personal project and is not meant to be used in a professional environment. I am not responsible for any damage caused by this project and I am not responsible for crashes or any other issues that may occur. Use at your own risk.
 
+Also, I do not recommend using the ui, this is still insecure and could leak the app password. I recommend manually editing the json file.
+
 ## Contact
 If you have any questions, you can contact me on discord: `Emile#3163`
 
