@@ -10,7 +10,6 @@ const limiter = rateLimit({
     standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
     legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 })
-app.use(limiter)
 const __dirname = path.resolve();
 //get data from ./src/json/index.json
 var data = JSON.parse(fs.readFileSync(__dirname + '/src/json/index.json', 'utf8'));
@@ -24,6 +23,7 @@ var transporter = nodemail.createTransport({
 });
 
 const app = express();
+app.use(limiter)
 app.use(bodyParser.json());
 function init() {
     //start the pages
